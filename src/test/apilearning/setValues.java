@@ -10,8 +10,8 @@ public class setValues {
         AppiumDriver<WebElement> appiumDriver=AppiumDriverEx.getAppiumDriver();
         WebElement loginLabel=appiumDriver.findElementByAccessibilityId("Login");
         loginLabel.click();
-        WebElement usernametxtbx=appiumDriver.findElementByAccessibilityId("input-email");
-        usernametxtbx.sendKeys("Osama@gmail.com");
+        WebElement usernamebtn=appiumDriver.findElementByAccessibilityId("input-email");
+        usernamebtn.sendKeys("Osama@gmail.com");
         WebElement pass=appiumDriver.findElementByAccessibilityId("input-password");
         pass.sendKeys("wdjasdja");
         WebElement loginBtn=appiumDriver.findElementByAccessibilityId("button-LOGIN");
@@ -22,6 +22,6 @@ public class setValues {
         // Click on Login
         // input username
         // input password
-        // clicj on login
+        // click on login
     }
 }

@@ -17,7 +17,7 @@ public class AppiumDriverEx {
            DesiredCapabilities desiredCapabilities=new DesiredCapabilities();
            desiredCapabilities.setCapability(MoblieCapabilityTypeEx.PLATFORM_NAME,"Android");
            desiredCapabilities.setCapability(MoblieCapabilityTypeEx.AUTOMATION_NAME,"uiautomator2");
-           desiredCapabilities.setCapability(MoblieCapabilityTypeEx.UDID,"RF8N715KD9T");
+           desiredCapabilities.setCapability(MoblieCapabilityTypeEx.UDID,"emulator-5554");
            desiredCapabilities.setCapability(MoblieCapabilityTypeEx.APP_PACKAGE,"com.wdiodemoapp");
            desiredCapabilities.setCapability(MoblieCapabilityTypeEx.APP_ACTIVITY,"com.wdiodemoapp.MainActivity");
            desiredCapabilities.setCapability(MoblieCapabilityTypeEx.NEW_COMMAND_TIMEOUT,120);

@@ -19,7 +19,7 @@ public class Runapp {
            desiredCapabilities.setCapability("appPackage","com.wdiodemoapp");
            desiredCapabilities.setCapability("appActivity","com.wdiodemoapp.MainActivity");
 
-           URL appiumServer=new URL("http://localhost:4724/wd/hub");
+           URL appiumServer=new URL("http://localhost:4723/hub");
            appiumDriver=new AppiumDriver<>(appiumServer,desiredCapabilities);
 
        } catch(Exception e){
