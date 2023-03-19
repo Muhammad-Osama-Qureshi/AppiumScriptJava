@@ -27,7 +27,7 @@ public class TakeScreenshots {
             switchElement.click();
         }
         //click on dropdown menu --> select first option
-        WebElement ClickDropDown = appiumDriver.findElementByXPath("//android.view.ViewGroup[@content-desc=\'Dropdown\']/android.view.ViewGroup/android.widget.EditText");
+        WebElement ClickDropDown = appiumDriver.findElementByXPath("//android.view.ViewGroup[@content-desc='Dropdown']/android.view.ViewGroup/android.widget.EditText");
         ClickDropDown.click();
         WebElement selectFromMenu = appiumDriver.findElementByXPath("//*[@text='Appium is awesome']");
         selectFromMenu.click();
@@ -35,7 +35,7 @@ public class TakeScreenshots {
 
         // taking a screenshot
         File formScreenBase64Data = ((TakesScreenshot) appiumDriver).getScreenshotAs(OutputType.FILE);
-        String formScreenFilePath = System.getProperty("user.dir") + "/screenshot/" + "Screenwwe.png";
+        String formScreenFilePath = System.getProperty("user.dir") + "/screenshot/" + "ScreenTake.png";
         try {
             FileUtils.copyFile(formScreenBase64Data, new File(formScreenFilePath));
         } catch (IOException e) {
